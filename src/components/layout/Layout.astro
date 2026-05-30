@@ -7,6 +7,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <!doctype html>
@@ -26,7 +27,7 @@ const { title } = Astro.props;
 		<!-- Header -->
 		<header class="border-b border-slate-200 bg-white sticky top-0 z-10 shadow-sm">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-				<a href="/" class="flex items-center gap-3 group">
+				<a href={`${base}/`} class="flex items-center gap-3 group">
 					<img src={logoImage.src} alt="Logo UNS" class="h-12 w-auto object-contain" />
 					<div class="flex flex-col">
 						<span class="font-serif font-bold text-lg text-surface tracking-tight group-hover:text-uns transition-colors leading-tight">Universidad Nacional<br />del Santa</span>
@@ -34,10 +35,10 @@ const { title } = Astro.props;
 					</div>
 				</a>
 				<nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-surface-light">
-					<a href="/" class="hover:text-uns transition-colors py-2 border-b-2 border-transparent hover:border-uns">Inicio</a>
-					<a href="/lineas" class="hover:text-uns transition-colors py-2 border-b-2 border-transparent hover:border-uns">Líneas</a>
-					<a href="/proyectos" class="hover:text-uns transition-colors py-2 border-b-2 border-transparent hover:border-uns">Proyectos</a>
-					<a href="/investigadores" class="hover:text-uns transition-colors py-2 border-b-2 border-transparent hover:border-uns">Investigadores</a>
+					<a href={`${base}/`} class="hover:text-uns transition-colors py-2 border-b-2 border-transparent hover:border-uns">Inicio</a>
+					<a href={`${base}/lineas`} class="hover:text-uns transition-colors py-2 border-b-2 border-transparent hover:border-uns">Líneas</a>
+					<a href={`${base}/proyectos`} class="hover:text-uns transition-colors py-2 border-b-2 border-transparent hover:border-uns">Proyectos</a>
+					<a href={`${base}/investigadores`} class="hover:text-uns transition-colors py-2 border-b-2 border-transparent hover:border-uns">Investigadores</a>
 				</nav>
 			</div>
 		</header>
