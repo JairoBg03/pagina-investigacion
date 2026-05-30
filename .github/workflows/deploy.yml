@@ -27,6 +27,8 @@ jobs:
         
       - name: Instalar dependencias y construir Astro
         uses: withastro/action@v3
+        with:
+          node-version: 22
         # Esta acción detecta automáticamente si usas npm, pnpm o yarn
         # y ejecuta 'npm run build' de forma inteligente.
 
