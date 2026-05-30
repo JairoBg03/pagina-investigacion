@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  /* El Rojo UNS como color primario */
+  --color-uns: #BE1E3E;
+  --color-uns-light: #D93E58;
+  --color-uns-dark: #9A152E;
+  
+  /* Escala de "Negros/Grises" para legibilidad */
+  --color-surface: #0F172A;
+  --color-surface-light: #334155;
+  
+  /* Fondos claros */
+  --color-background: #FFFFFF;
+  --color-background-alt: #F8FAFC;
+  
+  /* Color de Acento */
+  --color-accent: #F59E0B;
+  
+  /* Tipografías */
+  --font-serif: Merriweather, serif;
+  --font-sans: Inter, sans-serif;
+}

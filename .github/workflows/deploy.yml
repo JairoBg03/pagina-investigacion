@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages
+
+on:
+  # Se ejecuta automáticamente cada vez que haces un 'git push' a la rama 'main'
+  push:
+    branches: [ main ]
+  # Permite ejecutarlo manualmente desde la pestaña "Actions" en GitHub
+  workflow_dispatch:
+
+# Permisos necesarios para que GitHub Action pueda publicar en Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Previene que múltiples builds se ejecuten al mismo tiempo
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v4
+        
+      - name: Instalar dependencias y construir Astro
+        uses: withastro/action@v3
+        # Esta acción detecta automáticamente si usas npm, pnpm o yarn
+        # y ejecuta 'npm run build' de forma inteligente.
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

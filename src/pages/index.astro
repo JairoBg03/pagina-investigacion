@@ -1,0 +1,106 @@
+---
+import Layout from '../components/layout/Layout.astro';
+---
+
+<Layout title="Investigación - Universidad Nacional del Santa">
+	<div class="bg-background-alt py-16 md:py-24 border-b border-slate-200">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+			<span class="text-accent font-semibold tracking-wider text-sm uppercase mb-4 block">Portal de Conocimiento</span>
+			<h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-surface mb-6 leading-tight">
+				Avances que impulsan el <br class="hidden md:block" /> <span class="text-uns">desarrollo regional</span>
+			</h1>
+			<p class="text-lg md:text-xl text-surface-light max-w-3xl mx-auto mb-10">
+				Descubre las últimas publicaciones, proyectos financiados y patentes desarrolladas por los docentes e investigadores de la Universidad Nacional del Santa.
+			</p>
+			<div class="flex items-center justify-center gap-4">
+				<button class="bg-uns text-white px-6 py-3 rounded-md font-medium hover:bg-uns-light transition-colors shadow-sm">
+					Explorar Investigaciones
+				</button>
+				<button class="bg-white text-surface border border-slate-300 px-6 py-3 rounded-md font-medium hover:bg-slate-50 transition-colors shadow-sm">
+					Directorio Docente
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+		<div class="flex items-center justify-between mb-8">
+			<h2 class="text-2xl font-serif font-bold text-surface">Publicaciones Recientes</h2>
+			<a href="#" class="text-uns font-medium text-sm hover:underline">Ver todas &rarr;</a>
+		</div>
+		
+		<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+			<!-- Tarjeta 1 -->
+			<article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow group cursor-pointer">
+				<div class="h-48 bg-slate-100 p-6 flex items-center justify-center border-b border-slate-100 overflow-hidden relative">
+					<div class="absolute inset-0 bg-uns/5 group-hover:bg-uns/10 transition-colors"></div>
+					<svg class="w-16 h-16 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+					</svg>
+				</div>
+				<div class="p-6">
+					<div class="flex items-center gap-2 mb-3">
+						<span class="bg-accent/10 text-accent-dark text-xs font-bold px-2 py-1 rounded border border-accent/20">Biotecnología</span>
+						<span class="text-surface-light text-xs font-medium">Mayo 2026</span>
+					</div>
+					<h3 class="text-xl font-serif font-bold mb-2 leading-tight group-hover:text-uns transition-colors">Nuevos métodos de extracción de compuestos bioactivos en algas locales</h3>
+					<p class="text-surface-light text-sm mb-4 line-clamp-3">
+						Un estudio liderado por la Facultad de Ciencias demuestra que el uso de tecnologías de ultrasonido mejora la eficiencia en la extracción...
+					</p>
+					<div class="flex items-center gap-2 mt-auto">
+						<div class="w-6 h-6 rounded-full bg-slate-200"></div>
+						<span class="text-xs font-medium text-surface">Dr. Juan Pérez</span>
+					</div>
+				</div>
+			</article>
+
+			<!-- Tarjeta 2 -->
+			<article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow group cursor-pointer">
+				<div class="h-48 bg-slate-100 p-6 flex items-center justify-center border-b border-slate-100 overflow-hidden relative">
+					<div class="absolute inset-0 bg-uns/5 group-hover:bg-uns/10 transition-colors"></div>
+					<svg class="w-16 h-16 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+					</svg>
+				</div>
+				<div class="p-6">
+					<div class="flex items-center gap-2 mb-3">
+						<span class="bg-accent/10 text-accent-dark text-xs font-bold px-2 py-1 rounded border border-accent/20">Ingeniería</span>
+						<span class="text-surface-light text-xs font-medium">Abril 2026</span>
+					</div>
+					<h3 class="text-xl font-serif font-bold mb-2 leading-tight group-hover:text-uns transition-colors">Optimización de redes eléctricas usando inteligencia artificial</h3>
+					<p class="text-surface-light text-sm mb-4 line-clamp-3">
+						El departamento de Ingeniería en Energía propone un algoritmo de machine learning capaz de predecir picos de demanda y redistribuir cargas...
+					</p>
+					<div class="flex items-center gap-2 mt-auto">
+						<div class="w-6 h-6 rounded-full bg-slate-200"></div>
+						<span class="text-xs font-medium text-surface">Dra. María Gonzales</span>
+					</div>
+				</div>
+			</article>
+
+			<!-- Tarjeta 3 -->
+			<article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow group cursor-pointer">
+				<div class="h-48 bg-slate-100 p-6 flex items-center justify-center border-b border-slate-100 overflow-hidden relative">
+					<div class="absolute inset-0 bg-uns/5 group-hover:bg-uns/10 transition-colors"></div>
+					<svg class="w-16 h-16 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+					</svg>
+				</div>
+				<div class="p-6">
+					<div class="flex items-center gap-2 mb-3">
+						<span class="bg-accent/10 text-accent-dark text-xs font-bold px-2 py-1 rounded border border-accent/20">Salud Pública</span>
+						<span class="text-surface-light text-xs font-medium">Marzo 2026</span>
+					</div>
+					<h3 class="text-xl font-serif font-bold mb-2 leading-tight group-hover:text-uns transition-colors">Impacto de la calidad del agua en zonas rurales costeras</h3>
+					<p class="text-surface-light text-sm mb-4 line-clamp-3">
+						Investigación multidisciplinaria analiza la correlación entre metales pesados en fuentes de agua subterráneas y enfermedades...
+					</p>
+					<div class="flex items-center gap-2 mt-auto">
+						<div class="w-6 h-6 rounded-full bg-slate-200"></div>
+						<span class="text-xs font-medium text-surface">MSc. Carlos Vílchez</span>
+					</div>
+				</div>
+			</article>
+		</section>
+	</div>
+</Layout>
