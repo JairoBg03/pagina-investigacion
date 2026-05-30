@@ -9,11 +9,11 @@ export default defineConfig({
   // ==========================================
   
   // 1. Reemplaza "TU-USUARIO" con tu nombre de usuario real en GitHub
-  site: 'https://TU-USUARIO.github.io',
+  site: 'https://JairoBg03.github.io',
   
   // 2. Reemplaza "NOMBRE-DEL-REPO" con el nombre exacto de tu repositorio en GitHub
   // OJO: Debe empezar con una barra diagonal (/)
-  base: '/NOMBRE-DEL-REPO',
+  base: '/pagina-investigacion',
 
   // ==========================================
   vite: {

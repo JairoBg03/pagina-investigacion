@@ -1,0 +1,104 @@
+---
+import Layout from '../components/layout/Layout.astro';
+---
+
+<Layout title="Líneas de Investigación - UNS">
+	<div class="bg-surface py-16 border-b border-surface-light relative overflow-hidden">
+		<!-- Decoración de fondo -->
+		<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+		
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+			<span class="text-accent font-semibold tracking-wider text-sm uppercase mb-4 block">Ejes de Estudio</span>
+			<h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight">
+				Nuestras Líneas de <span class="text-uns-light">Investigación</span>
+			</h1>
+			<p class="text-lg text-slate-300 max-w-2xl mx-auto">
+				La UNS desarrolla investigación científica y tecnológica orientada a resolver los problemas prioritarios de nuestra región y del país.
+			</p>
+		</div>
+	</div>
+
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+			<!-- Línea 1 -->
+			<div class="flex bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg hover:border-uns/30 transition-all group">
+				<div class="w-32 bg-slate-50 flex items-center justify-center border-r border-slate-100 group-hover:bg-uns/5 transition-colors">
+					<svg class="w-12 h-12 text-uns" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+					</svg>
+				</div>
+				<div class="p-8 flex-1">
+					<h2 class="text-2xl font-serif font-bold text-surface mb-3 group-hover:text-uns transition-colors">Ciencias y Gestión Ambiental</h2>
+					<p class="text-surface-light text-sm leading-relaxed mb-4">
+						Desarrollo de tecnologías limpias, monitoreo de ecosistemas costeros y andinos, y evaluación del impacto de metales pesados en la flora y fauna de la región Áncash.
+					</p>
+					<ul class="text-sm font-medium text-slate-600 space-y-2">
+						<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Biotecnología Ambiental</li>
+						<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Conservación de Recursos Hídricos</li>
+						<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Energías Renovables</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Línea 2 -->
+			<div class="flex bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg hover:border-uns/30 transition-all group">
+				<div class="w-32 bg-slate-50 flex items-center justify-center border-r border-slate-100 group-hover:bg-uns/5 transition-colors">
+					<svg class="w-12 h-12 text-uns" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+					</svg>
+				</div>
+				<div class="p-8 flex-1">
+					<h2 class="text-2xl font-serif font-bold text-surface mb-3 group-hover:text-uns transition-colors">Tecnología y Sistemas de Información</h2>
+					<p class="text-surface-light text-sm leading-relaxed mb-4">
+						Innovación en arquitecturas de software, aplicación de inteligencia artificial en la industria, y optimización de redes de telecomunicaciones para zonas rurales.
+					</p>
+					<ul class="text-sm font-medium text-slate-600 space-y-2">
+						<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Inteligencia Artificial y Machine Learning</li>
+						<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Internet de las Cosas (IoT)</li>
+						<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Ciberseguridad</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Línea 3 -->
+			<div class="flex bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg hover:border-uns/30 transition-all group">
+				<div class="w-32 bg-slate-50 flex items-center justify-center border-r border-slate-100 group-hover:bg-uns/5 transition-colors">
+					<svg class="w-12 h-12 text-uns" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+					</svg>
+				</div>
+				<div class="p-8 flex-1">
+					<h2 class="text-2xl font-serif font-bold text-surface mb-3 group-hover:text-uns transition-colors">Salud y Bienestar Social</h2>
+					<p class="text-surface-light text-sm leading-relaxed mb-4">
+						Estudios epidemiológicos, salud pública comunitaria y desarrollo de estrategias de intervención para mejorar la calidad de vida de poblaciones vulnerables.
+					</p>
+					<ul class="text-sm font-medium text-slate-600 space-y-2">
+						<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Enfermería y Cuidado Comunitario</li>
+						<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Medicina Preventiva</li>
+						<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Nutrición y Dietética</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Línea 4 -->
+			<div class="flex bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg hover:border-uns/30 transition-all group">
+				<div class="w-32 bg-slate-50 flex items-center justify-center border-r border-slate-100 group-hover:bg-uns/5 transition-colors">
+					<svg class="w-12 h-12 text-uns" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+					</svg>
+				</div>
+				<div class="p-8 flex-1">
+					<h2 class="text-2xl font-serif font-bold text-surface mb-3 group-hover:text-uns transition-colors">Educación y Desarrollo Humano</h2>
+					<p class="text-surface-light text-sm leading-relaxed mb-4">
+						Investigación en metodologías de enseñanza innovadoras, inclusión educativa y evaluación de impacto de políticas socioeducativas en la región.
+					</p>
+					<ul class="text-sm font-medium text-slate-600 space-y-2">
+						<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Innovación Pedagógica</li>
+						<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Educación Inclusiva</li>
+						<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Tecnologías Educativas</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>

@@ -1,0 +1,93 @@
+---
+import Layout from '../components/layout/Layout.astro';
+---
+
+<Layout title="Proyectos Destacados - UNS">
+	<div class="bg-background-alt py-16 border-b border-slate-200">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+			<span class="text-accent font-semibold tracking-wider text-sm uppercase mb-4 block">Impacto Real</span>
+			<h1 class="text-4xl md:text-5xl font-serif font-bold text-surface mb-6 leading-tight">
+				Proyectos <span class="text-uns">Destacados</span>
+			</h1>
+			<p class="text-lg text-surface-light max-w-2xl mx-auto">
+				Conoce los proyectos de investigación financiados que están generando soluciones tangibles para nuestra sociedad e industria.
+			</p>
+		</div>
+	</div>
+
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+		<div class="flex flex-col gap-12">
+			<!-- Proyecto 1 -->
+			<div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col md:flex-row group">
+				<div class="md:w-2/5 bg-slate-100 flex-shrink-0 relative overflow-hidden h-64 md:h-auto">
+					<div class="absolute inset-0 bg-uns/10 group-hover:bg-uns/20 transition-colors z-10"></div>
+					<div class="absolute inset-0 flex items-center justify-center p-8 z-0">
+						<svg class="w-32 h-32 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+						</svg>
+					</div>
+				</div>
+				<div class="p-8 md:p-12 flex flex-col justify-center">
+					<div class="flex items-center gap-3 mb-4">
+						<span class="bg-uns/10 text-uns font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wide">Fondo CANON</span>
+						<span class="text-surface-light text-sm font-medium flex items-center gap-1">
+							<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+							</svg>
+							2025 - 2027
+						</span>
+					</div>
+					<h2 class="text-3xl font-serif font-bold text-surface mb-4 group-hover:text-uns transition-colors">Sistema de Alerta Temprana para Fenómeno El Niño</h2>
+					<p class="text-surface-light mb-6 text-lg leading-relaxed">
+						Desarrollo e implementación de una red de sensores IoT a lo largo de la costa de Áncash para predecir anomalías climáticas y emitir alertas tempranas a los sectores agrícola y pesquero, minimizando pérdidas económicas.
+					</p>
+					<div class="flex items-center gap-4 mt-auto pt-6 border-t border-slate-100">
+						<div class="flex -space-x-3">
+							<div class="w-10 h-10 rounded-full bg-slate-300 border-2 border-white"></div>
+							<div class="w-10 h-10 rounded-full bg-slate-400 border-2 border-white"></div>
+						</div>
+						<div>
+							<p class="text-sm font-bold text-surface">Dr. Roberto Sánchez & Dra. Luisa Mera</p>
+							<p class="text-xs text-surface-light">Facultad de Ciencias - Depto. de Física</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Proyecto 2 -->
+			<div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col md:flex-row-reverse group">
+				<div class="md:w-2/5 bg-slate-100 flex-shrink-0 relative overflow-hidden h-64 md:h-auto">
+					<div class="absolute inset-0 bg-accent/10 group-hover:bg-accent/20 transition-colors z-10"></div>
+					<div class="absolute inset-0 flex items-center justify-center p-8 z-0">
+						<svg class="w-32 h-32 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+						</svg>
+					</div>
+				</div>
+				<div class="p-8 md:p-12 flex flex-col justify-center">
+					<div class="flex items-center gap-3 mb-4">
+						<span class="bg-uns/10 text-uns font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wide">Fondo PROCIENCIA</span>
+						<span class="text-surface-light text-sm font-medium flex items-center gap-1">
+							<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+							</svg>
+							2024 - 2026
+						</span>
+					</div>
+					<h2 class="text-3xl font-serif font-bold text-surface mb-4 group-hover:text-uns transition-colors">Valorización de Residuos Agroindustriales</h2>
+					<p class="text-surface-light mb-6 text-lg leading-relaxed">
+						Proceso biotecnológico para la extracción de pectina y antioxidantes a partir de los desechos del procesamiento de mango y maracuyá en la provincia del Santa, promoviendo la economía circular.
+					</p>
+					<div class="flex items-center gap-4 mt-auto pt-6 border-t border-slate-100">
+						<div class="w-10 h-10 rounded-full bg-slate-300"></div>
+						<div>
+							<p class="text-sm font-bold text-surface">MSc. Elena Rojas</p>
+							<p class="text-xs text-surface-light">Facultad de Ingeniería - Escuela de Agroindustria</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</Layout>
