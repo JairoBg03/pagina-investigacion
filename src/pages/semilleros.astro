@@ -1,0 +1,155 @@
+---
+import Layout from '../components/layout/Layout.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Semilleros de Investigación - UNS">
+	<!-- Hero Section -->
+	<div class="bg-surface text-white py-16 md:py-24 border-b-4 border-uns relative overflow-hidden">
+		<div class="absolute inset-0 bg-uns opacity-10 mix-blend-multiply"></div>
+		<div class="absolute right-0 top-0 w-1/3 h-full bg-gradient-to-l from-uns-dark/30 to-transparent"></div>
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+			<div class="max-w-3xl">
+				<span class="text-accent font-semibold tracking-wider text-sm uppercase mb-4 block">Atracción de Talento</span>
+				<h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight">
+					Semilleros de <span class="text-accent">Investigación</span>
+				</h1>
+				<p class="text-lg md:text-xl text-slate-300 mb-8">
+					Fomentamos el relevo generacional en la ciencia. Únete a nuestros grupos de estudio, colabora con investigadores experimentados y da tus primeros pasos en la investigación académica y aplicada.
+				</p>
+				<div class="flex gap-4">
+					<button class="bg-uns hover:bg-uns-light text-white px-6 py-3 rounded-md font-medium transition-colors shadow-lg shadow-uns/30">
+						Unirme a un Semillero
+					</button>
+					<button class="bg-transparent border border-white/30 text-white hover:bg-white/10 px-6 py-3 rounded-md font-medium transition-colors">
+						Ver Bases 2026
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Semilleros Activos -->
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+		<div class="text-center mb-12">
+			<h2 class="text-3xl font-serif font-bold text-surface mb-4">Grupos Activos Destacados</h2>
+			<p class="text-surface-light max-w-2xl mx-auto">Conoce algunos de los semilleros formados por estudiantes de pregrado y posgrado que actualmente están desarrollando proyectos innovadores.</p>
+		</div>
+
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+			<!-- Semillero 1 -->
+			<div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow">
+				<div class="h-3 bg-uns"></div>
+				<div class="p-8">
+					<div class="w-12 h-12 bg-uns/10 rounded-lg flex items-center justify-center text-uns mb-6">
+						<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+						</svg>
+					</div>
+					<h3 class="text-xl font-serif font-bold text-surface mb-2">Biotecnología y Bioingeniería</h3>
+					<p class="text-sm font-medium text-accent mb-4">Facultad de Ciencias</p>
+					<p class="text-surface-light text-sm mb-6">Estudio de microorganismos y desarrollo de bioprocesos para remediación ambiental y producción de biocombustibles.</p>
+					<div class="flex items-center gap-3 text-sm text-surface font-medium border-t border-slate-100 pt-4">
+						<div class="w-8 h-8 rounded-full bg-slate-200 overflow-hidden">
+							<img src={`${base}/images/inv_juan.webp`} alt="Mentor" class="w-full h-full object-cover" />
+						</div>
+						<span>Mentor: Dr. Juan Pérez</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Semillero 2 -->
+			<div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow">
+				<div class="h-3 bg-uns"></div>
+				<div class="p-8">
+					<div class="w-12 h-12 bg-uns/10 rounded-lg flex items-center justify-center text-uns mb-6">
+						<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+						</svg>
+					</div>
+					<h3 class="text-xl font-serif font-bold text-surface mb-2">Redes Inteligentes e IoT</h3>
+					<p class="text-sm font-medium text-accent mb-4">Ingeniería en Energía</p>
+					<p class="text-surface-light text-sm mb-6">Aplicación de sensores de bajo costo y algoritmos de optimización para monitoreo de redes eléctricas rurales.</p>
+					<div class="flex items-center gap-3 text-sm text-surface font-medium border-t border-slate-100 pt-4">
+						<div class="w-8 h-8 rounded-full bg-slate-200 overflow-hidden">
+							<img src={`${base}/images/inv_maria.webp`} alt="Mentor" class="w-full h-full object-cover" />
+						</div>
+						<span>Mentora: Dra. María Gonzales</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Semillero 3 -->
+			<div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow">
+				<div class="h-3 bg-uns"></div>
+				<div class="p-8">
+					<div class="w-12 h-12 bg-uns/10 rounded-lg flex items-center justify-center text-uns mb-6">
+						<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+						</svg>
+					</div>
+					<h3 class="text-xl font-serif font-bold text-surface mb-2">Salud Pública Costera</h3>
+					<p class="text-sm font-medium text-accent mb-4">Ciencias de la Salud</p>
+					<p class="text-surface-light text-sm mb-6">Evaluación de determinantes sociales y ambientales que afectan la salud en comunidades de pescadores artesanales.</p>
+					<div class="flex items-center gap-3 text-sm text-surface font-medium border-t border-slate-100 pt-4">
+						<div class="w-8 h-8 rounded-full bg-slate-200 overflow-hidden">
+							<img src={`${base}/images/inv_carlos.webp`} alt="Mentor" class="w-full h-full object-cover" />
+						</div>
+						<span>Mentor: MSc. Carlos Vílchez</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Stats & Benefits -->
+	<div class="bg-background-alt border-t border-slate-200 py-16">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<h2 class="text-3xl font-serif font-bold text-surface mb-6">¿Por qué unirte a un semillero?</h2>
+					<ul class="space-y-4">
+						<li class="flex items-start gap-3">
+							<div class="mt-1 w-6 h-6 rounded-full bg-accent/20 text-accent-dark flex items-center justify-center flex-shrink-0">
+								<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+							</div>
+							<p class="text-surface-light"><strong class="text-surface">Financiamiento semilla:</strong> Acceso a pequeños fondos para reactivos, materiales o movilidad nacional.</p>
+						</li>
+						<li class="flex items-start gap-3">
+							<div class="mt-1 w-6 h-6 rounded-full bg-accent/20 text-accent-dark flex items-center justify-center flex-shrink-0">
+								<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+							</div>
+							<p class="text-surface-light"><strong class="text-surface">Publicaciones tempranas:</strong> Posibilidad de figurar como coautor en artículos científicos indizados antes de graduarte.</p>
+						</li>
+						<li class="flex items-start gap-3">
+							<div class="mt-1 w-6 h-6 rounded-full bg-accent/20 text-accent-dark flex items-center justify-center flex-shrink-0">
+								<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+							</div>
+							<p class="text-surface-light"><strong class="text-surface">Redes de contacto:</strong> Conoce a investigadores líderes y participa en congresos nacionales e internacionales.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+					<h3 class="text-xl font-bold font-serif mb-4 text-surface border-b border-slate-100 pb-4">Requisitos Generales</h3>
+					<ul class="space-y-3 text-sm text-surface-light">
+						<li class="flex items-center gap-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-uns"></span> Estar matriculado en el tercio superior
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-uns"></span> Haber cursado al menos el 4to ciclo académico
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-uns"></span> Disponibilidad de 10 horas semanales
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-uns"></span> Carta de recomendación de un docente ordinario
+						</li>
+					</ul>
+					<button class="w-full mt-6 bg-slate-900 text-white py-2 rounded-md font-medium hover:bg-slate-800 transition-colors">
+						Descargar Reglamento
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
